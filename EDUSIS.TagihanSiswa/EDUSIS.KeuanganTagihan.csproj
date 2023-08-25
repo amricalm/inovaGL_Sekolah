@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB3E224A-62B3-4428-B4C8-CE1F961E38B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDUSIS.KeuanganTagihan</RootNamespace>
+    <AssemblyName>EDUSIS.KeuanganTagihan</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls\TagihanSiswa.cs" />
+    <Compile Include="cls\TagihanSiswaDao.cs" />
+    <Compile Include="cls\TagihanSiswaDtlDao.cs" />
+    <Compile Include="cls\TagihanSiswaDtlPeriodeDao.cs" />
+    <Compile Include="frm\FKeuanganTagihan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FKeuanganTagihan.designer.cs">
+      <DependentUpon>FKeuanganTagihan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FKeuanganTagihan.resx">
+      <DependentUpon>FKeuanganTagihan.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\inovaGL.Data\inovaGL.Data.csproj">
+      <Project>{00213021-D22E-4B7F-956C-F105195405C6}</Project>
+      <Name>inovaGL.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Biaya\EDUSIS.Biaya.csproj">
+      <Project>{1C0470C6-0D01-4FA7-BF7C-708E7FB8F904}</Project>
+      <Name>EDUSIS.Biaya</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.KelasSiswa\EDUSIS.KelasSiswa.csproj">
+      <Project>{72B6A3BD-2C22-4DD8-81C8-AE6E4320914C}</Project>
+      <Name>EDUSIS.KelasSiswa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Kelas\EDUSIS.Kelas.csproj">
+      <Project>{B6BAB72E-F35C-448E-B937-A0BAD6D18006}</Project>
+      <Name>EDUSIS.Kelas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Shared\EDUSIS.Shared.csproj">
+      <Project>{2D9EB655-CF9F-43AF-A723-BD688D3638F5}</Project>
+      <Name>EDUSIS.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Siswa\EDUSIS.Siswa.csproj">
+      <Project>{43B8F5B6-D1FA-426A-B46A-72413174AC0A}</Project>
+      <Name>EDUSIS.Siswa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaGL.Piutang\inovaGL.Piutang.csproj">
+      <Project>{DCB75C97-3C86-4CF3-853A-5C4FBB4EF8B1}</Project>
+      <Name>inovaGL.Piutang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

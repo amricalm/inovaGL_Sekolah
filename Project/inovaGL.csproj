@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E53FD1E-6E2E-47C6-90EB-33B88DF38135}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inovaGL</RootNamespace>
+    <AssemblyName>inovaGL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\tmp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AD49073543D0B9A98173F9526B2F5E8A84A46287</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>inovaGL_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls\_AppFungsi.cs" />
+    <Compile Include="cls\_AppVar.cs" />
+    <Compile Include="ds\edusis.cs">
+      <DependentUpon>edusis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\edusis.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edusis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\rpt.cs">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\rpt.Designer.cs">
+      <DependentUpon>rpt.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="frmAset\FDAsetKelompok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAset\FDAsetKelompok.designer.cs">
+      <DependentUpon>FDAsetKelompok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAset\FDAset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAset\FDAset.designer.cs">
+      <DependentUpon>FDAset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAset\FMAset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAset\FMAset.designer.cs">
+      <DependentUpon>FMAset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAset\FMAsetKelompok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAset\FMAsetKelompok.designer.cs">
+      <DependentUpon>FMAsetKelompok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMThAjar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMThAjar.designer.cs">
+      <DependentUpon>FMThAjar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProses.designer.cs">
+      <DependentUpon>FProses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesPenyusutan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesPenyusutan.designer.cs">
+      <DependentUpon>FProsesPenyusutan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesImportLoketPSB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesImportLoketPSB.designer.cs">
+      <DependentUpon>FProsesImportLoketPSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesImportGaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesImportGaji.designer.cs">
+      <DependentUpon>FProsesImportGaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDTJurnalSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDTJurnalSiswa.designer.cs">
+      <DependentUpon>FDTJurnalSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FTJurnalSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FTJurnalSiswa.designer.cs">
+      <DependentUpon>FTJurnalSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesBulanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesBulanan.designer.cs">
+      <DependentUpon>FProsesBulanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesImportLoket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesImportLoket.designer.cs">
+      <DependentUpon>FProsesImportLoket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDPos.designer.cs">
+      <DependentUpon>FDPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMPos.designer.cs">
+      <DependentUpon>FMPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDAkun.designer.cs">
+      <DependentUpon>FDAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapTest.designer.cs">
+      <DependentUpon>FDlgLapTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDTJurnalUmum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDTJurnalUmum.designer.cs">
+      <DependentUpon>FDTJurnalUmum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDTKasKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDTKasKeluar.designer.cs">
+      <DependentUpon>FDTKasKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMAkun.designer.cs">
+      <DependentUpon>FMAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMSetup.designer.cs">
+      <DependentUpon>FMSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FProsesKasMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FProsesKasMasuk.designer.cs">
+      <DependentUpon>FProsesKasMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDTAnggaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDTAnggaran.designer.cs">
+      <DependentUpon>FDTAnggaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMAkunTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMAkunTree.designer.cs">
+      <DependentUpon>FMAkunTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDTKasMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDTKasMasuk.designer.cs">
+      <DependentUpon>FDTKasMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FTJurnalUmum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FTJurnalUmum.designer.cs">
+      <DependentUpon>FTJurnalUmum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FTKasKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FTKasKeluar.designer.cs">
+      <DependentUpon>FTKasKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FTKasMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FTKasMasuk.designer.cs">
+      <DependentUpon>FTKasMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FTSaldoAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FTSaldoAwal.designer.cs">
+      <DependentUpon>FTSaldoAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_APP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_APP.designer.cs">
+      <DependentUpon>F_APP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAset\FDAsetKelompok.resx">
+      <DependentUpon>FDAsetKelompok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAset\FDAset.resx">
+      <DependentUpon>FDAset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAset\FMAset.resx">
+      <DependentUpon>FMAset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAset\FMAsetKelompok.resx">
+      <DependentUpon>FMAsetKelompok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMThAjar.resx">
+      <DependentUpon>FMThAjar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProses.resx">
+      <DependentUpon>FProses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesPenyusutan.resx">
+      <DependentUpon>FProsesPenyusutan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesImportLoketPSB.resx">
+      <DependentUpon>FProsesImportLoketPSB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesImportGaji.resx">
+      <DependentUpon>FProsesImportGaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDTJurnalSiswa.resx">
+      <DependentUpon>FDTJurnalSiswa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FTJurnalSiswa.resx">
+      <DependentUpon>FTJurnalSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesBulanan.resx">
+      <DependentUpon>FProsesBulanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesImportLoket.resx">
+      <DependentUpon>FProsesImportLoket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDPos.resx">
+      <DependentUpon>FDPos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMPos.resx">
+      <DependentUpon>FMPos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDAkun.resx">
+      <DependentUpon>FDAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapTest.resx">
+      <DependentUpon>FDlgLapTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDTJurnalUmum.resx">
+      <DependentUpon>FDTJurnalUmum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDTKasKeluar.resx">
+      <DependentUpon>FDTKasKeluar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMAkun.resx">
+      <DependentUpon>FMAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMSetup.resx">
+      <DependentUpon>FMSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FProsesKasMasuk.resx">
+      <DependentUpon>FProsesKasMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDTAnggaran.resx">
+      <DependentUpon>FDTAnggaran.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMAkunTree.resx">
+      <DependentUpon>FMAkunTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDTKasMasuk.resx">
+      <DependentUpon>FDTKasMasuk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FTJurnalUmum.resx">
+      <DependentUpon>FTJurnalUmum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FTKasKeluar.resx">
+      <DependentUpon>FTKasKeluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FTKasMasuk.resx">
+      <DependentUpon>FTKasMasuk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FTSaldoAwal.resx">
+      <DependentUpon>FTSaldoAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_APP.resx">
+      <DependentUpon>F_APP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmulApp.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdnApp.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlHamid App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlIshmahApp.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AsbGunungPutri.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MadinaApp.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds\edusis.xsc">
+      <DependentUpon>edusis.xsd</DependentUpon>
+    </None>
+    <None Include="ds\edusis.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>edusis.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\edusis.xss">
+      <DependentUpon>edusis.xsd</DependentUpon>
+    </None>
+    <None Include="ds\rpt.xsc">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </None>
+    <None Include="ds\rpt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds\rpt.xss">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\inovaGL.ds.edusis+KwitansiDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.edusis+LapHarianDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+AnggaranRealisasiDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+BukuBesarDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+KasKeluarDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+KasMasukDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+LabaRugiDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+LabaRugiDept6KolomDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+LabaRugiDeptDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+LabaRugiThBerjalanDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+NeracaSaldoDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+PiutangPerAkunDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+PiutangPerKelasDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+PiutangSiswaDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.ds.rpt+SaldoPendapatanDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana.Control\Andhana.Control.csproj">
+      <Project>{8217f5fb-8073-4890-b874-51057a987bd2}</Project>
+      <Name>Andhana.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana.inovaPOS\Andhana.inovaPOS.csproj">
+      <Project>{4bc26a8e-e1bd-4343-93d2-a85e3b317a3c}</Project>
+      <Name>Andhana.inovaPOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana.Karyawan\Andhana.Karyawan.csproj">
+      <Project>{adf10165-8e9e-419a-b223-3059ea193adb}</Project>
+      <Name>Andhana.Karyawan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana.Security.App\Andhana.Security.App.csproj">
+      <Project>{7e7bffbc-7a49-4bbd-a86d-4c69a3358cf1}</Project>
+      <Name>Andhana.Security.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana.Security\Andhana.Security.csproj">
+      <Project>{304e5827-66ce-4cc6-830a-b690e39f848b}</Project>
+      <Name>Andhana.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Andhana\Andhana Dependencies\Andhana v2019\Andhana\Andhana.csproj">
+      <Project>{88157a76-6cfc-4e10-adf2-6b79c2df9008}</Project>
+      <Name>Andhana</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\inovaGL.Data\inovaGL.Data.csproj">
+      <Project>{00213021-D22E-4B7F-956C-F105195405C6}</Project>
+      <Name>inovaGL.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dll\inovaGL.Definisi\inovaGL.Definisi.csproj">
+      <Project>{804A5E24-C191-4B98-8E12-F60FCA360C98}</Project>
+      <Name>inovaGL.Definisi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dll\inovaGL.Laporan\inovaGL.Laporan.csproj">
+      <Project>{76CDECA1-5537-4055-AB1A-BCE19FF2AFD7}</Project>
+      <Name>inovaGL.Laporan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dll\inovaGL.Shared\inovaGL.Shared.csproj">
+      <Project>{F44561D7-5A82-4C7D-91F1-37145E869070}</Project>
+      <Name>inovaGL.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Biaya\EDUSIS.Biaya.csproj">
+      <Project>{1C0470C6-0D01-4FA7-BF7C-708E7FB8F904}</Project>
+      <Name>EDUSIS.Biaya</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.KelasSiswa\EDUSIS.KelasSiswa.csproj">
+      <Project>{72B6A3BD-2C22-4DD8-81C8-AE6E4320914C}</Project>
+      <Name>EDUSIS.KelasSiswa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Kelas\EDUSIS.Kelas.csproj">
+      <Project>{B6BAB72E-F35C-448E-B937-A0BAD6D18006}</Project>
+      <Name>EDUSIS.Kelas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.KeuanganPembayaran\EDUSIS.KeuanganPembayaran.csproj">
+      <Project>{9E679F87-BAD1-44F6-AEF3-01B402C3A094}</Project>
+      <Name>EDUSIS.KeuanganPembayaran</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Laporan\EDUSIS.KeuanganLaporan.csproj">
+      <Project>{9592B70E-B824-45F5-BFE9-4858693E8839}</Project>
+      <Name>EDUSIS.KeuanganLaporan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Shared\EDUSIS.Shared.csproj">
+      <Project>{2D9EB655-CF9F-43AF-A723-BD688D3638F5}</Project>
+      <Name>EDUSIS.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Siswa\EDUSIS.Siswa.csproj">
+      <Project>{43B8F5B6-D1FA-426A-B46A-72413174AC0A}</Project>
+      <Name>EDUSIS.Siswa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.TagihanSiswa\EDUSIS.KeuanganTagihan.csproj">
+      <Project>{CB3E224A-62B3-4428-B4C8-CE1F961E38B7}</Project>
+      <Name>EDUSIS.KeuanganTagihan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.VirtualAccount\EDUSIS.VirtualAccount.csproj">
+      <Project>{BAE5178E-768D-4CD1-9552-E03FD67F3B3E}</Project>
+      <Name>EDUSIS.VirtualAccount</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaGL.Piutang\inovaGL.Piutang.csproj">
+      <Project>{DCB75C97-3C86-4CF3-853A-5C4FBB4EF8B1}</Project>
+      <Name>inovaGL.Piutang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaGL.Utang\inovaGL.Utang.csproj">
+      <Project>{F1F60471-C2C7-4200-A9FB-B32B8095DA64}</Project>
+      <Name>inovaGL.Utang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaPayroll.Core\inovaPayroll.Core.csproj">
+      <Project>{B0B8E6D0-0784-4C06-99F3-A74CA7CA4D69}</Project>
+      <Name>inovaPayroll.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="EdusisPelanggan.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

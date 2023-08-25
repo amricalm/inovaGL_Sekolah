@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A25D626A-BEF6-4E39-8168-E4DF56151799}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inovaPOS.Barang</RootNamespace>
+    <AssemblyName>inovaPOS.Barang</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Andhana.Control, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Andhana\Andhana\bin\Debug\Andhana.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm\FDCariBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDCariBarang.designer.cs">
+      <DependentUpon>FDCariBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDMBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDMBarang.designer.cs">
+      <DependentUpon>FDMBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMGroupBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMGroupBarang.designer.cs">
+      <DependentUpon>FMGroupBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMSatuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMSatuan.designer.cs">
+      <DependentUpon>FMSatuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMBarang.designer.cs">
+      <DependentUpon>FMBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FSetHargaJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FSetHargaJual.designer.cs">
+      <DependentUpon>FSetHargaJual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cls\im_mbarang.cs" />
+    <Compile Include="cls\im_mbarangDao.cs" />
+    <Compile Include="cls\im_mgroup.cs" />
+    <Compile Include="cls\im_mgroupDao.cs" />
+    <Compile Include="cls\im_msatuan.cs" />
+    <Compile Include="cls\im_msatuanDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FDCariBarang.resx">
+      <DependentUpon>FDCariBarang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDMBarang.resx">
+      <DependentUpon>FDMBarang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMGroupBarang.resx">
+      <DependentUpon>FMGroupBarang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMSatuan.resx">
+      <DependentUpon>FMSatuan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMBarang.resx">
+      <DependentUpon>FMBarang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FSetHargaJual.resx">
+      <DependentUpon>FSetHargaJual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Andhana\Andhana\Andhana.csproj">
+      <Project>{88157A76-6CFC-4E10-ADF2-6B79C2DF9008}</Project>
+      <Name>Andhana</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaPOS.Pemasok\inovaPOS.Pemasok.csproj">
+      <Project>{B99D85FD-0F85-46C1-BCB2-CE06FECDA701}</Project>
+      <Name>inovaPOS.Pemasok</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

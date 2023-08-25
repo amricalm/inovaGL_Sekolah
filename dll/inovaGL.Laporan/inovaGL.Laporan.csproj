@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76CDECA1-5537-4055-AB1A-BCE19FF2AFD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inovaGL.Laporan</RootNamespace>
+    <AssemblyName>inovaGL.Laporan</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ds\rpt.cs">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\rpt.Designer.cs">
+      <DependentUpon>rpt.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="frm\FDlgLapBJU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapBJU.designer.cs">
+      <DependentUpon>FDlgLapBJU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapPenerimaanPerPeriode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapPenerimaanPerPeriode.designer.cs">
+      <DependentUpon>FDlgLapPenerimaanPerPeriode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapPengeluaranPerSumberDana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapPengeluaranPerSumberDana.designer.cs">
+      <DependentUpon>FDlgLapPengeluaranPerSumberDana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapSaldoPendapatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapSaldoPendapatan.designer.cs">
+      <DependentUpon>FDlgLapSaldoPendapatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapUtangSiswaPerKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapUtangSiswaPerKelas.designer.cs">
+      <DependentUpon>FDlgLapUtangSiswaPerKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapUtangSiswaPerAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapUtangSiswaPerAkun.designer.cs">
+      <DependentUpon>FDlgLapUtangSiswaPerAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswaPerAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswaPerAkun.designer.cs">
+      <DependentUpon>FDlgLapPiutangSiswaPerAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswaPerKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswaPerKelas.designer.cs">
+      <DependentUpon>FDlgLapPiutangSiswaPerKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRThBerjalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRThBerjalan.designer.cs">
+      <DependentUpon>FDlgLapLRThBerjalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasiPerTanggal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasiPerTanggal.designer.cs">
+      <DependentUpon>FDlgLapAnggaranRealisasiPerTanggal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasiBulanBerjalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasiBulanBerjalan.designer.cs">
+      <DependentUpon>FDlgLapAnggaranRealisasiBulanBerjalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapPiutangSiswa.designer.cs">
+      <DependentUpon>FDlgLapPiutangSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRbyDeptStandar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRbyDeptStandar.designer.cs">
+      <DependentUpon>FDlgLapLRbyDeptStandar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRStandar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRStandar.designer.cs">
+      <DependentUpon>FDlgLapLRStandar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeracaStandar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeracaStandar.designer.cs">
+      <DependentUpon>FDlgLapNeracaStandar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRbyDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapLRbyDept.designer.cs">
+      <DependentUpon>FDlgLapLRbyDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapAnggaranRealisasi.designer.cs">
+      <DependentUpon>FDlgLapAnggaranRealisasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapBB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapBB.designer.cs">
+      <DependentUpon>FDlgLapBB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapBKK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapBKK.designer.cs">
+      <DependentUpon>FDlgLapBKK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapBKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapBKM.designer.cs">
+      <DependentUpon>FDlgLapBKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapLR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapLR.designer.cs">
+      <DependentUpon>FDlgLapLR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeraca.designer.cs">
+      <DependentUpon>FDlgLapNeraca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeracaSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapNeracaSaldo.designer.cs">
+      <DependentUpon>FDlgLapNeracaSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDlgLapTr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDlgLapTr.designer.cs">
+      <DependentUpon>FDlgLapTr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FDlgLapBJU.resx">
+      <DependentUpon>FDlgLapBJU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapPenerimaanPerPeriode.resx">
+      <DependentUpon>FDlgLapPenerimaanPerPeriode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapPengeluaranPerSumberDana.resx">
+      <DependentUpon>FDlgLapPengeluaranPerSumberDana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapSaldoPendapatan.resx">
+      <DependentUpon>FDlgLapSaldoPendapatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapUtangSiswaPerKelas.resx">
+      <DependentUpon>FDlgLapUtangSiswaPerKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapUtangSiswaPerAkun.resx">
+      <DependentUpon>FDlgLapUtangSiswaPerAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapPiutangSiswaPerAkun.resx">
+      <DependentUpon>FDlgLapPiutangSiswaPerAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapPiutangSiswaPerKelas.resx">
+      <DependentUpon>FDlgLapPiutangSiswaPerKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapLRThBerjalan.resx">
+      <DependentUpon>FDlgLapLRThBerjalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapAnggaranRealisasiPerTanggal.resx">
+      <DependentUpon>FDlgLapAnggaranRealisasiPerTanggal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapAnggaranRealisasiBulanBerjalan.resx">
+      <DependentUpon>FDlgLapAnggaranRealisasiBulanBerjalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapPiutangSiswa.resx">
+      <DependentUpon>FDlgLapPiutangSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapLRbyDeptStandar.resx">
+      <DependentUpon>FDlgLapLRbyDeptStandar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapLRStandar.resx">
+      <DependentUpon>FDlgLapLRStandar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapNeracaStandar.resx">
+      <DependentUpon>FDlgLapNeracaStandar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapLRbyDept.resx">
+      <DependentUpon>FDlgLapLRbyDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapAnggaranRealisasi.resx">
+      <DependentUpon>FDlgLapAnggaranRealisasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapBB.resx">
+      <DependentUpon>FDlgLapBB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapBKK.resx">
+      <DependentUpon>FDlgLapBKK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapBKM.resx">
+      <DependentUpon>FDlgLapBKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapLR.resx">
+      <DependentUpon>FDlgLapLR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapNeraca.resx">
+      <DependentUpon>FDlgLapNeraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapNeracaSaldo.resx">
+      <DependentUpon>FDlgLapNeracaSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDlgLapTr.resx">
+      <DependentUpon>FDlgLapTr.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\inovaGL.Data\inovaGL.Data.csproj">
+      <Project>{00213021-D22E-4B7F-956C-F105195405C6}</Project>
+      <Name>inovaGL.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDUSIS.Biaya\EDUSIS.Biaya.csproj">
+      <Project>{1C0470C6-0D01-4FA7-BF7C-708E7FB8F904}</Project>
+      <Name>EDUSIS.Biaya</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDUSIS.Kelas\EDUSIS.Kelas.csproj">
+      <Project>{B6BAB72E-F35C-448E-B937-A0BAD6D18006}</Project>
+      <Name>EDUSIS.Kelas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDUSIS.Shared\EDUSIS.Shared.csproj">
+      <Project>{2D9EB655-CF9F-43AF-A723-BD688D3638F5}</Project>
+      <Name>EDUSIS.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inovaGL.Shared\inovaGL.Shared.csproj">
+      <Project>{F44561D7-5A82-4C7D-91F1-37145E869070}</Project>
+      <Name>inovaGL.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ds\rpt.xsc">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </None>
+    <None Include="ds\rpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\rpt.xss">
+      <DependentUpon>rpt.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\inovaGL.Laporan.ds.rpt+BukuBesarDataTable.datasource" />
+    <None Include="Properties\DataSources\inovaGL.Laporan.ds.rpt.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

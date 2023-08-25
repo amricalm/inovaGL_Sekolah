@@ -1,0 +1,390 @@
+﻿namespace inovaGL
+{
+    partial class FMSetup
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMSetup));
+            this.adnNavMenu = new Andhana.Control.AdnNav();
+            this.toolStripButtonTutup = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonTambah = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonEdit = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonHapus = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonBatal = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonSimpan = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.panelHdr = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxAkunIkhtisarLabaRugi = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxAkunLabaTahunBerjalan = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxAkunLabaDitahan = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerTglPeriodeAkuntansi = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.adnNavMenu)).BeginInit();
+            this.adnNavMenu.SuspendLayout();
+            this.panelHdr.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // adnNavMenu
+            // 
+            this.adnNavMenu.AddNewItem = null;
+            this.adnNavMenu.CountItem = null;
+            this.adnNavMenu.DeleteItem = null;
+            this.adnNavMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonTutup,
+            this.toolStripSeparator1,
+            this.toolStripButtonTambah,
+            this.toolStripSeparator2,
+            this.toolStripButtonEdit,
+            this.toolStripSeparator5,
+            this.toolStripButtonHapus,
+            this.toolStripSeparator3,
+            this.toolStripButtonBatal,
+            this.toolStripSeparator4,
+            this.toolStripButtonSimpan,
+            this.toolStripSeparator6});
+            this.adnNavMenu.Location = new System.Drawing.Point(0, 0);
+            this.adnNavMenu.MoveFirstItem = null;
+            this.adnNavMenu.MoveLastItem = null;
+            this.adnNavMenu.MoveNextItem = null;
+            this.adnNavMenu.MovePreviousItem = null;
+            this.adnNavMenu.Name = "adnNavMenu";
+            this.adnNavMenu.PositionItem = null;
+            this.adnNavMenu.Size = new System.Drawing.Size(540, 25);
+            this.adnNavMenu.TabIndex = 0;
+            this.adnNavMenu.Text = "adnNav1";
+            // 
+            // toolStripButtonTutup
+            // 
+            this.toolStripButtonTutup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonTutup.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonTutup.ForeColor = System.Drawing.Color.DarkGreen;
+            this.toolStripButtonTutup.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonTutup.Name = "toolStripButtonTutup";
+            this.toolStripButtonTutup.Size = new System.Drawing.Size(44, 22);
+            this.toolStripButtonTutup.Text = "Tutup";
+            this.toolStripButtonTutup.ToolTipText = "Tutup Jendela";
+            this.toolStripButtonTutup.Click += new System.EventHandler(this.toolStripButtonTutup_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonTambah
+            // 
+            this.toolStripButtonTambah.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonTambah.Enabled = false;
+            this.toolStripButtonTambah.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTambah.Image")));
+            this.toolStripButtonTambah.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonTambah.Name = "toolStripButtonTambah";
+            this.toolStripButtonTambah.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonTambah.Text = "Tambah";
+            this.toolStripButtonTambah.Click += new System.EventHandler(this.toolStripButtonTambah_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonEdit
+            // 
+            this.toolStripButtonEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonEdit.Enabled = false;
+            this.toolStripButtonEdit.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEdit.Image")));
+            this.toolStripButtonEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEdit.Name = "toolStripButtonEdit";
+            this.toolStripButtonEdit.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonEdit.Text = "Edit";
+            this.toolStripButtonEdit.Click += new System.EventHandler(this.toolStripButtonEdit_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonHapus
+            // 
+            this.toolStripButtonHapus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonHapus.Enabled = false;
+            this.toolStripButtonHapus.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonHapus.Image")));
+            this.toolStripButtonHapus.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonHapus.Name = "toolStripButtonHapus";
+            this.toolStripButtonHapus.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonHapus.Text = "Hapus";
+            this.toolStripButtonHapus.Click += new System.EventHandler(this.toolStripButtonHapus_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonBatal
+            // 
+            this.toolStripButtonBatal.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonBatal.Enabled = false;
+            this.toolStripButtonBatal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButtonBatal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.toolStripButtonBatal.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBatal.Name = "toolStripButtonBatal";
+            this.toolStripButtonBatal.Size = new System.Drawing.Size(40, 22);
+            this.toolStripButtonBatal.Text = "Batal";
+            this.toolStripButtonBatal.ToolTipText = "Batal";
+            this.toolStripButtonBatal.Click += new System.EventHandler(this.toolStripButtonBatal_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonSimpan
+            // 
+            this.toolStripButtonSimpan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonSimpan.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSimpan.Image")));
+            this.toolStripButtonSimpan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonSimpan.Name = "toolStripButtonSimpan";
+            this.toolStripButtonSimpan.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonSimpan.Text = "toolStripButtonSimpan";
+            this.toolStripButtonSimpan.ToolTipText = "Simpan";
+            this.toolStripButtonSimpan.Click += new System.EventHandler(this.toolStripButtonSimpan_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // panelHdr
+            // 
+            this.panelHdr.Controls.Add(this.groupBox2);
+            this.panelHdr.Location = new System.Drawing.Point(0, 28);
+            this.panelHdr.Name = "panelHdr";
+            this.panelHdr.Size = new System.Drawing.Size(538, 487);
+            this.panelHdr.TabIndex = 2;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.groupBox1);
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Location = new System.Drawing.Point(3, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(532, 484);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.comboBoxAkunIkhtisarLabaRugi);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.comboBoxAkunLabaTahunBerjalan);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.comboBoxAkunLabaDitahan);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(48, 164);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(451, 217);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Akun Rujukan";
+            // 
+            // comboBoxAkunIkhtisarLabaRugi
+            // 
+            this.comboBoxAkunIkhtisarLabaRugi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAkunIkhtisarLabaRugi.FormattingEnabled = true;
+            this.comboBoxAkunIkhtisarLabaRugi.Location = new System.Drawing.Point(160, 99);
+            this.comboBoxAkunIkhtisarLabaRugi.Name = "comboBoxAkunIkhtisarLabaRugi";
+            this.comboBoxAkunIkhtisarLabaRugi.Size = new System.Drawing.Size(259, 21);
+            this.comboBoxAkunIkhtisarLabaRugi.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(25, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Ikhtisar Laba Rugi";
+            // 
+            // comboBoxAkunLabaTahunBerjalan
+            // 
+            this.comboBoxAkunLabaTahunBerjalan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAkunLabaTahunBerjalan.FormattingEnabled = true;
+            this.comboBoxAkunLabaTahunBerjalan.Location = new System.Drawing.Point(160, 72);
+            this.comboBoxAkunLabaTahunBerjalan.Name = "comboBoxAkunLabaTahunBerjalan";
+            this.comboBoxAkunLabaTahunBerjalan.Size = new System.Drawing.Size(259, 21);
+            this.comboBoxAkunLabaTahunBerjalan.TabIndex = 52;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 13);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Laba Tahun Berjalan";
+            // 
+            // comboBoxAkunLabaDitahan
+            // 
+            this.comboBoxAkunLabaDitahan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAkunLabaDitahan.FormattingEnabled = true;
+            this.comboBoxAkunLabaDitahan.Location = new System.Drawing.Point(160, 45);
+            this.comboBoxAkunLabaDitahan.Name = "comboBoxAkunLabaDitahan";
+            this.comboBoxAkunLabaDitahan.Size = new System.Drawing.Size(259, 21);
+            this.comboBoxAkunLabaDitahan.TabIndex = 50;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Laba Ditahan";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dateTimePickerTglPeriodeAkuntansi);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Location = new System.Drawing.Point(48, 40);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(451, 104);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Periode Akuntansi";
+            // 
+            // dateTimePickerTglPeriodeAkuntansi
+            // 
+            this.dateTimePickerTglPeriodeAkuntansi.Location = new System.Drawing.Point(160, 47);
+            this.dateTimePickerTglPeriodeAkuntansi.Name = "dateTimePickerTglPeriodeAkuntansi";
+            this.dateTimePickerTglPeriodeAkuntansi.Size = new System.Drawing.Size(136, 20);
+            this.dateTimePickerTglPeriodeAkuntansi.TabIndex = 40;
+            this.dateTimePickerTglPeriodeAkuntansi.Value = new System.DateTime(2012, 1, 25, 10, 32, 23, 0);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(25, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Tanggal Mulai";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.Black;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 442);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(540, 22);
+            this.statusStrip1.TabIndex = 17;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(457, 17);
+            this.toolStripStatusLabel1.Text = "ESC: Tutup  |  F10: Edit  | F11: Tambah  | F12: Simpan  |  CTL+D: Hapus  |  CTL+N" +
+                ": Batal";
+            this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // FMSetup
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(540, 464);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.panelHdr);
+            this.Controls.Add(this.adnNavMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
+            this.Name = "FMSetup";
+            this.Text = "Setup";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FMSetup_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.adnNavMenu)).EndInit();
+            this.adnNavMenu.ResumeLayout(false);
+            this.adnNavMenu.PerformLayout();
+            this.panelHdr.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Andhana.Control.AdnNav adnNavMenu;
+        private System.Windows.Forms.ToolStripButton toolStripButtonTutup;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonTambah;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButtonHapus;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBatal;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton toolStripButtonSimpan;
+        private System.Windows.Forms.Panel panelHdr;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEdit;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTglPeriodeAkuntansi;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxAkunIkhtisarLabaRugi;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxAkunLabaTahunBerjalan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxAkunLabaDitahan;
+
+    }
+}

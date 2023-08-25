@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C0470C6-0D01-4FA7-BF7C-708E7FB8F904}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDUSIS.Biaya</RootNamespace>
+    <AssemblyName>EDUSIS.Biaya</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls\Biaya.cs" />
+    <Compile Include="cls\BiayaDao.cs" />
+    <Compile Include="cls\JenisBiaya.cs" />
+    <Compile Include="cls\JenisBiayaDao.cs" />
+    <Compile Include="cls\BiayaSekolahDao.cs" />
+    <Compile Include="frm\FDBiayaSekolah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDBiayaSekolah.designer.cs">
+      <DependentUpon>FDBiayaSekolah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FDMBiaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDMBiaya.designer.cs">
+      <DependentUpon>FDMBiaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMBiaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMBiaya.designer.cs">
+      <DependentUpon>FMBiaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\inovaGL.Data\inovaGL.Data.csproj">
+      <Project>{00213021-D22E-4B7F-956C-F105195405C6}</Project>
+      <Name>inovaGL.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDUSIS.Shared\EDUSIS.Shared.csproj">
+      <Project>{2D9EB655-CF9F-43AF-A723-BD688D3638F5}</Project>
+      <Name>EDUSIS.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FDBiayaSekolah.resx">
+      <DependentUpon>FDBiayaSekolah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FDMBiaya.resx">
+      <DependentUpon>FDMBiaya.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMBiaya.resx">
+      <DependentUpon>FMBiaya.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

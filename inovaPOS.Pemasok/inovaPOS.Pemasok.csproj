@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B99D85FD-0F85-46C1-BCB2-CE06FECDA701}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inovaPOS</RootNamespace>
+    <AssemblyName>inovaPOS.Pemasok</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="inovaPOS.Sistem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\inovaPOS.Sistem\bin\Debug\inovaPOS.Sistem.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls\cp.cs" />
+    <Compile Include="cls\cpDao.cs" />
+    <Compile Include="cls\im_mpemasok.cs" />
+    <Compile Include="frm\FDMPemasok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDMPemasok.designer.cs">
+      <DependentUpon>FDMPemasok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FLapPemasokDf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FLapPemasokDf.designer.cs">
+      <DependentUpon>FLapPemasokDf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cls\im_mpemasokDao.cs" />
+    <Compile Include="frm\FMCp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMCp.designer.cs">
+      <DependentUpon>FMCp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\FMPemasok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FMPemasok.designer.cs">
+      <DependentUpon>FMPemasok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FDMPemasok.resx">
+      <DependentUpon>FDMPemasok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FLapPemasokDf.resx">
+      <DependentUpon>FLapPemasokDf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMCp.resx">
+      <DependentUpon>FMCp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\FMPemasok.resx">
+      <DependentUpon>FMPemasok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hapus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Andhana\Andhana.Control\Andhana.Control.csproj">
+      <Project>{8217F5FB-8073-4890-B874-51057A987BD2}</Project>
+      <Name>Andhana.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Andhana\Andhana.Security\Andhana.Security.csproj">
+      <Project>{304E5827-66CE-4CC6-830A-B690E39F848B}</Project>
+      <Name>Andhana.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Andhana\Andhana\Andhana.csproj">
+      <Project>{88157A76-6CFC-4E10-ADF2-6B79C2DF9008}</Project>
+      <Name>Andhana</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

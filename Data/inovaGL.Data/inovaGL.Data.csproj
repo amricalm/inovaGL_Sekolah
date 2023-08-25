@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00213021-D22E-4B7F-956C-F105195405C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inovaGL.Data</RootNamespace>
+    <AssemblyName>inovaGL.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls\AdnSystem.cs" />
+    <Compile Include="cls\Akun.cs" />
+    <Compile Include="cls\AkunDao.cs" />
+    <Compile Include="cls\Anggaran.cs" />
+    <Compile Include="cls\AnggaranDao.cs" />
+    <Compile Include="cls\AsetKelompok.cs" />
+    <Compile Include="cls\AsetKelompokDao.cs" />
+    <Compile Include="cls\Aset.cs" />
+    <Compile Include="cls\AsetDao.cs" />
+    <Compile Include="cls\TmpVaDao.cs" />
+    <Compile Include="cls\TmpVaDtlDao.cs" />
+    <Compile Include="cls\TmpVa.cs" />
+    <Compile Include="cls\LoketPSBDao.cs" />
+    <Compile Include="cls\GajiDao.cs" />
+    <Compile Include="cls\SysJenisJurnalDao.cs" />
+    <Compile Include="cls\SysJenisJurnal.cs" />
+    <Compile Include="cls\LoketDao.cs" />
+    <Compile Include="cls\Dept.cs" />
+    <Compile Include="cls\DeptDao.cs" />
+    <Compile Include="cls\Jurnal.cs" />
+    <Compile Include="cls\JurnalDao.cs" />
+    <Compile Include="cls\JurnalDtlDao.cs" />
+    <Compile Include="cls\JurnalUmum.cs" />
+    <Compile Include="cls\JurnalUmumDao.cs" />
+    <Compile Include="cls\JurnalUmumDtlDao.cs" />
+    <Compile Include="cls\KasKeluar.cs" />
+    <Compile Include="cls\KasKeluarDao.cs" />
+    <Compile Include="cls\KasKeluarDtlDao.cs" />
+    <Compile Include="cls\KasMasuk.cs" />
+    <Compile Include="cls\KasMasukDao.cs" />
+    <Compile Include="cls\KasMasukDtlDao.cs" />
+    <Compile Include="cls\LapKeuangan.cs" />
+    <Compile Include="cls\Pos.cs" />
+    <Compile Include="cls\PosDao.cs" />
+    <Compile Include="cls\PosDtlDao.cs" />
+    <Compile Include="cls\Project.cs" />
+    <Compile Include="cls\ProjectDao.cs" />
+    <Compile Include="cls\SaldoAwal.cs" />
+    <Compile Include="cls\SaldoAwalDao.cs" />
+    <Compile Include="cls\SysAkunGolongan.cs" />
+    <Compile Include="cls\SysAkunGolonganDao.cs" />
+    <Compile Include="cls\ThAjar.cs" />
+    <Compile Include="cls\ThAjarDao.cs" />
+    <Compile Include="frm\FDCariAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\FDCariAkun.designer.cs">
+      <DependentUpon>FDCariAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\dll\inovaGL.Definisi\inovaGL.Definisi.csproj">
+      <Project>{804A5E24-C191-4B98-8E12-F60FCA360C98}</Project>
+      <Name>inovaGL.Definisi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\dll\inovaGL.Shared\inovaGL.Shared.csproj">
+      <Project>{F44561D7-5A82-4C7D-91F1-37145E869070}</Project>
+      <Name>inovaGL.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDUSIS.Shared\EDUSIS.Shared.csproj">
+      <Project>{2D9EB655-CF9F-43AF-A723-BD688D3638F5}</Project>
+      <Name>EDUSIS.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="frm\FDCariAkun.resx">
+      <DependentUpon>FDCariAkun.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

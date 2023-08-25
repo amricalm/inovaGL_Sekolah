@@ -1,0 +1,2 @@
+1. Pilih Periode Input Buku
+2. Buku Bank -> +saldo

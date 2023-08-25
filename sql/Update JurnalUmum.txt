@@ -1,0 +1,7 @@
+insert into ac_tjurnal(kd_jurnal,tgl,deskripsi,tgl_tambah,tgl_edit,uid,uid_edit)
+select kd_jurnal,tgl,deskripsi,tgl_tambah,tgl_edit,uid,uid_edit
+from ac_tju
+
+insert into ac_tjurnal_dtl(kd_jurnal,kd_akun,no_urut,debet,kredit,kd_project,kd_program,kd_dept,memo)
+select kd_tju,kd_akun,no_urut,debet,kredit,kd_project,kd_program,kd_dept,memo
+from ac_tju_dtl
